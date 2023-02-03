@@ -1,0 +1,25 @@
+npm i react-router-dom
+
+npm install -g sass
+
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+
+//Install Strapi
+npx create-strapi-app@latest .
+F:\git\react\react_ecommerce\api>  create-strapi-app .
+? Choose your installation type Custom (manual settings)
+? Choose your preferred language (Use arrow keys)
+? Choose your preferred language JavaScript
+? Choose your default database client 
+? Choose your default database client mysql
+? Database name: (api) store
+? Database name: store
+? Host: 127.0.0.1
+? Port: (3306) 8808
+? Username: root
+? Password:
+? Enable SSL connection: (y/N) n
+? Enable SSL connection: No
+
+//Start Strapi
+npm run develop

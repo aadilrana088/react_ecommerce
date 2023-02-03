@@ -1,5 +1,0 @@
-npm i react-router-dom
-
-npm install -g sass
-
-npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
