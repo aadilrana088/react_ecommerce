@@ -15,7 +15,7 @@ F:\git\react\react_ecommerce\api>  create-strapi-app .
 ? Database name: (api) store
 ? Database name: store
 ? Host: 127.0.0.1
-? Port: (3306) 8808
+? Port: (3306) 3306
 ? Username: root
 ? Password:
 ? Enable SSL connection: (y/N) n
