@@ -30,3 +30,6 @@ With the header: Authorization: bearer <YOUR_API_TOKEN>
 
 //Install axios and fetch data
 npm i axios
+
+to populate all data including images use 
+/products?populate=*"
