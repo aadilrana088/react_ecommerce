@@ -7,14 +7,14 @@ const Card = ({ item }) => {
         <Link className="link" to={`/product/${item.id}`}>
             <div className="card">
                 <div className="image">
-                    {item.isNew && <span>New Season</span>}
+                    {item?.attributes.isNew && <span>New Season</span>}
                     <img src={item.img} alt="" className="mainImg" />
                     <img src={item.img2} alt="" className="secondImg" />
                 </div>
-                <h2>{item.title}</h2>
+                <h2>{item?.attributes.title}</h2>
                 <div className="prices">
-                    <h3> &#8377;{item.oldPrice * 80}</h3>
-                    <h3> &#8377;{item.price * 80}</h3>
+                    <h3> &#8377;{item.oldPrice || item?.attributes.price + 20}</h3>
+                    <h3> &#8377;{item?.attributes.price}</h3>
                 </div>
             </div>
         </Link>
