@@ -23,3 +23,7 @@ F:\git\react\react_ecommerce\api>  create-strapi-app .
 
 //Start Strapi
 npm run develop
+
+See content in action by making an HTTP request: (To fetch API of strapi)
+To this URL: https://<YOUR_DOMAIN>/api/<YOUR_CT>
+With the header: Authorization: bearer <YOUR_API_TOKEN>
