@@ -21,7 +21,7 @@ const Products = () => {
                 : selectedSubCats.filter((item) => item !== value)
         );
     };
-    console.log(selectedSubCats);
+    // console.log(selectedSubCats);
     return (
         <div className="products">
             <div className="left">
@@ -86,7 +86,7 @@ const Products = () => {
                     src="https://images.pexels.com/photos/1159670/pexels-photo-1159670.jpeg?auto=compress&cs=tinysrgb&w=1600"
                     alt=""
                 />
-                <List catId={catId} maxPrice={maxPrice} sort={sort} />
+                <List catId={catId} maxPrice={maxPrice} sort={sort} subCats={selectedSubCats} />
             </div>
         </div>
     );
