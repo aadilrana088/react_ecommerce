@@ -9,7 +9,7 @@ const Products = () => {
     const [maxPrice, setMaxPrice] = useState(1000);
     const [sort, setSort] = useState(null);
     const [selectedSubCats, setSelectedSubCats] = useState([]);
-    const { data, loading, error } = useFetch(
+    const { data } = useFetch(
         `/sub-categories?[filters][categories][id][$eq]=${catId}`
     );
     const handleChange = (e) => {
@@ -64,6 +64,7 @@ const Products = () => {
                             id="asc"
                             value="asc"
                             name="price"
+                            checked
                             onChange={(e) => setSort('acs')}
                         />
                         <label htmlfor="asc">Price (Lowest first)</label>
