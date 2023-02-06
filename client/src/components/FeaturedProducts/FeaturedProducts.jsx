@@ -2,7 +2,9 @@ import Card from '../Card/Card';
 import './FeaturedProducts.scss';
 import useFetch from '../../hooks/useFetch';
 const FeaturedProducts = ({ type }) => {
-    const {data, loading, error} = useFetch(`/products?populate=*&[filters][type][$eq]=${type}`)
+    const { data, loading, error } = useFetch(
+        `/products?populate=*&[filters][type][$eq]=${type}`
+    );
     return (
         <div className="featuredProducts">
             <div className="top">
@@ -18,9 +20,11 @@ const FeaturedProducts = ({ type }) => {
                 </p>
             </div>
             <div className="bottom">
-                {error ? `Something went wrong + ${error}`: loading  ? "loading" :  data?.map((item) => (
-                    <Card item={item} key={item.id} />
-                ))}
+                {error
+                    ? `Something went wrong + ${error}`
+                    : loading
+                    ? 'loading'
+                    : data?.map((item) => <Card item={item} key={item.id} />)}
             </div>
         </div>
     );
