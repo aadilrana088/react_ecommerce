@@ -40,3 +40,6 @@ to populate all data including images use
 npm install redux @reduxjs/toolkit
 npm i react-redux
 
+npm install redux-persist
+
+
