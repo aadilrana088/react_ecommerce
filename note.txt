@@ -33,3 +33,10 @@ npm i axios
 
 to populate all data including images use 
 /products?populate=*"
+
+
+// Install Redux now
+
+npm install redux @reduxjs/toolkit
+npm i react-redux
+
