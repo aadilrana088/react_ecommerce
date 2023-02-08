@@ -36,10 +36,15 @@ to populate all data including images use
 
 
 // Install Redux now
-
 npm install redux @reduxjs/toolkit
 npm i react-redux
 
 npm install redux-persist
 
 
+
+//install stripe in api folder
+npm i stripe
+
+//install stripe in client folder
+npm install --save @stripe/react-stripe-js @stripe/stripe-js
